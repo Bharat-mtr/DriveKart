@@ -1,41 +1,41 @@
 const routeValidator = ({
-	route1fromstate,
-	route1fromcity,
-	route1tostate,
-	route1tocity,
-	route2fromstate,
-	route2fromcity,
-	route2tostate,
-	route2tocity,
-	route3fromstate,
-	route3fromcity,
-	route3tostate,
-	route3tocity,
+	route1FromState,
+	route1FromCity,
+	route1toState,
+	route1toCity,
+	route2FromState,
+	route2FromCity,
+	route2toState,
+	route2toCity,
+	route3FromState,
+	route3FromCity,
+	route3toState,
+	route3toCity,
 }) => {
-	console.log(route1fromstate);
-	if (route1fromstate === route1tostate && route1fromcity === route1tocity) {
+	console.log(route1FromState);
+	if (route1FromState === route1toState && route1FromCity === route1toCity) {
 		throw new Error(
 			"In Route-1 From and TO are same, please keep them different"
 		);
 	}
 
-	if (route2fromstate === route2tostate && route2fromcity === route2tocity) {
+	if (route2FromState === route2toState && route2FromCity === route2toCity) {
 		throw new Error(
 			"In Route-2 From and TO are same, please keep them different"
 		);
 	}
 
-	if (route3fromstate === route3tostate && route3fromcity === route3tocity) {
+	if (route3FromState === route3toState && route3FromCity === route3toCity) {
 		throw new Error(
 			"In Route-3 From and TO are same, please keep them different"
 		);
 	}
 
 	if (
-		route1fromstate === route2fromstate &&
-		route1fromcity === route2fromcity &&
-		route1tostate === route2tostate &&
-		route1tocity === route2tocity
+		route1FromState === route2FromState &&
+		route1FromCity === route2FromCity &&
+		route1toState === route2toState &&
+		route1toCity === route2toCity
 	) {
 		throw new Error(
 			"Route-1 and Route-2 are same, please keep them different"
@@ -43,10 +43,10 @@ const routeValidator = ({
 	}
 
 	if (
-		route1fromstate === route3fromstate &&
-		route1fromcity === route3fromcity &&
-		route1tostate === route3tostate &&
-		route1tocity === route3tocity
+		route1FromState === route3FromState &&
+		route1FromCity === route3FromCity &&
+		route1toState === route3toState &&
+		route1toCity === route3toCity
 	) {
 		throw new Error(
 			"Route-1 and Route-3 are same, please keep them different"
@@ -54,10 +54,10 @@ const routeValidator = ({
 	}
 
 	if (
-		route3fromstate === route2fromstate &&
-		route3fromcity === route2fromcity &&
-		route3tostate === route2tostate &&
-		route3tocity === route2tocity
+		route3FromState === route2FromState &&
+		route3FromCity === route2FromCity &&
+		route3toState === route2toState &&
+		route3toCity === route2toCity
 	) {
 		throw new Error(
 			"Route-2 and Route-3 are same, please keep them different"
