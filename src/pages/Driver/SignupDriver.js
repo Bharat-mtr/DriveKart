@@ -77,6 +77,7 @@ class SignupDriver extends React.Component {
         showToast(err.message, false);
       }
     }
+    this.setState({ isLoading: false });
   }
 
   render() {
@@ -608,4 +609,4 @@ class SignupDriver extends React.Component {
   }
 }
 
-export default SignupDriver;
+export default withRouter(SignupDriver);
