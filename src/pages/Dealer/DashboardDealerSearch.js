@@ -220,7 +220,7 @@ class DealerDashboardSearch extends React.Component {
             </Row>
           </Container>
         </Form>
-        <Container>
+        <Container className="mt-3" style={{ marginBottom: "60px" }}>
           {this.state.drivers.length === 0 ? (
             <h1>Sorry there are no drivers on this route</h1>
           ) : (
