@@ -15,6 +15,7 @@ import showToast from "../../helperFunctions/toast";
 import routeValidator from "../../helperFunctions/routeValidator";
 import axios from "axios";
 import env from "../../env.json";
+import { withRouter } from "../../customHooks/WithRouter";
 
 class SignupDriver extends React.Component {
   constructor(props) {
