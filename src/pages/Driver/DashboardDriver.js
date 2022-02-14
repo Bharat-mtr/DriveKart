@@ -69,16 +69,6 @@ class DriverDashboard extends React.Component {
             List of dealers who booked you, All the relevant information of the
             dealers is provided below :-
           </p>
-          <DealerCard
-            name="Kunal Lodha"
-            state="Uttar Pradesh"
-            city="Mathura"
-            phoneno="8441007031"
-            quality="Fragile"
-            weight="100"
-            quantity="23"
-            key="2323"
-          />
           {this.state.dealers.length === 0 ? (
             <h1>Sorry You haven&apos;t been booked by any dealer</h1>
           ) : (

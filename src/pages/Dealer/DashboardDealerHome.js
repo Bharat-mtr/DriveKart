@@ -100,7 +100,7 @@ class DealerDashboardHome extends React.Component {
             </Col>
           </Row>
         </Container>
-        <Container>
+        <Container className="mt-3" style={{ marginBottom: "60px" }}>
           {this.state.drivers.length === 0 ? (
             <h1>There are no drivers at your route</h1>
           ) : (
